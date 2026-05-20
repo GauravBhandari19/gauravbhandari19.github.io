@@ -31,7 +31,6 @@
       padding: 0 24px;
     }
 
-    /* ── Layout ── */
     .page {
       max-width: var(--max);
       margin: 0 auto;
@@ -45,7 +44,6 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* ── Nav ── */
     nav {
       display: flex;
       justify-content: space-between;
@@ -77,10 +75,7 @@
 
     .nav-links a:hover { color: var(--ink); }
 
-    /* ── Hero ── */
-    .hero {
-      margin-bottom: 80px;
-    }
+    .hero { margin-bottom: 80px; }
 
     .hero-label {
       font-size: 0.72rem;
@@ -123,14 +118,12 @@
       line-height: 1.8;
     }
 
-    /* ── Divider ── */
     .divider {
       border: none;
       border-top: 1px solid var(--border);
       margin: 56px 0;
     }
 
-    /* ── About body ── */
     .about-grid {
       display: grid;
       grid-template-columns: 140px 1fr;
@@ -154,7 +147,6 @@
 
     .about-text p + p { margin-top: 14px; }
 
-    /* ── Skills / tags ── */
     .tags {
       display: flex;
       flex-wrap: wrap;
@@ -175,7 +167,6 @@
 
     .tag:hover { border-color: var(--ink-muted); color: var(--ink); }
 
-    /* ── Contact ── */
     .contact-links {
       display: flex;
       flex-direction: column;
@@ -200,7 +191,6 @@
       color: var(--accent);
     }
 
-    /* ── Footer ── */
     footer {
       margin-top: 96px;
       padding-top: 32px;
@@ -212,7 +202,6 @@
       color: var(--ink-muted);
     }
 
-    /* ── Responsive ── */
     @media (max-width: 520px) {
       .page { padding: 48px 0 80px; }
       nav { margin-bottom: 56px; }
@@ -229,17 +218,17 @@
     <nav>
       <span class="nav-name">Gaurav Bhandari</span>
       <ul class="nav-links">
-        <!--li><a href="#">Work</a></li>
+        <li><a href="#">Work</a></li>
         <li><a href="#">Writing</a></li>
-        <li><a href="mailto:you@email.com">Contact</a></li-->
+        <li><a href="mailto:gaurav@gauravb.co.uk">Contact</a></li>
       </ul>
     </nav>
 
     <section class="hero">
       <p class="hero-label">About me</p>
-      <h1>Gaurav Bhandari,<br /><em>Finding Clarity in Complexity.</em></h1>
+      <h1>Gaurav Bhandari,<br /><em>still reading the docs.</em></h1>
       <p class="hero-intro">
-       Twenty years in IT. I've seen trends come and go — I'm still here, still reading the docs.
+        Twenty years in IT. I've seen trends come and go — I'm still here, still learning.
       </p>
     </section>
 
@@ -250,47 +239,69 @@
       <span class="about-label">Background</span>
       <div class="about-text">
         <p>
-          I came into IT through the business side — an MBA and a curiosity about how organisations think and where they hurt. I started as a Business Analyst at Hansen Technologies, where I spent years translating complex business needs into solutions for the utilities and energy sector. That grounding in product thinking led me to a Product Architect role, shaping how software evolved to meet real customer problems.
-Today I'm an Enterprise Architect at Eutelsat, working at the intersection of business strategy and technology — designing the systems and structures that keep a global satellite operator moving forward.
+          I came into IT through the business side — an MBA and a curiosity about how
+          organisations think and where they hurt. I started as a Business Analyst at
+          Hansen Technologies, where I spent years translating complex business needs
+          into solutions for the utilities and energy sector. That grounding in product
+          thinking led me to a Product Architect role, shaping how software evolved to
+          meet real customer problems.
         </p>
         <p>
-          What sets my approach apart is where I started — on the business side. I don't just see technology as infrastructure; I see it as a response to a problem someone real is trying to solve. That lens has followed me from BA to Enterprise Architect, and it shapes every decision I make.
+          What sets my approach apart is where I started — on the business side. I don't
+          just see technology as infrastructure; I see it as a response to a problem someone
+          real is trying to solve. That lens has followed me from BA to Enterprise Architect,
+          and it shapes every decision I make.
         </p>
       </div>
 
       <span class="about-label">Skills</span>
       <div class="about-text">
-        <div class="tags">      
+        <div class="tags">
           <span class="tag">Enterprise Architecture</span>
           <span class="tag">Solution Architecture</span>
           <span class="tag">Product Architecture</span>
           <span class="tag">Business Analysis</span>
           <span class="tag">Digital Transformation</span>
+          <span class="tag">Technology Strategy</span>
+          <span class="tag">TOGAF</span>
+          <span class="tag">ArchiMate</span>
+          <span class="tag">Agile / SAFe</span>
+          <span class="tag">Utilities &amp; Energy</span>
+          <span class="tag">Satellite &amp; Telecoms</span>
+          <span class="tag">Cloud Architecture</span>
+          <span class="tag">API &amp; Integration Design</span>
         </div>
       </div>
 
       <span class="about-label">Currently</span>
       <div class="about-text">
-        <p>Based in UK, working as Enterprise Architect at Eutelsat. Focused on aligning technology strategy with business goals across a complex, global organisation — and quietly learning to code on the side.</p>
+        <p>
+          Enterprise Architect at Eutelsat, based in the UK. Focused on aligning technology
+          strategy with business goals across a complex, global organisation — and quietly
+          learning to code on the side.
+        </p>
       </div>
 
       <span class="about-label">Outside work</span>
       <div class="about-text">
-        <p>When I'm not architecting systems, I'm usually exploring a new programming language or framework — learning for the sake of it.</p>
+        <p>
+          Mostly found reading documentation, experimenting with code, or drinking tea.
+        </p>
       </div>
 
-      <!--
       <span class="about-label">Get in touch</span>
       <div class="about-text">
         <div class="contact-links">
-          <a href="mailto:you@email.com"></a>
+          <a href="mailto:gaurav@gauravb.co.uk">gaurav@gauravb.co.uk</a>
+          <a href="https://linkedin.com/in/gauravb" target="_blank">LinkedIn</a>
+          <a href="https://github.com/gauravb" target="_blank">GitHub</a>
         </div>
       </div>
-      -->
+
     </div>
 
     <footer>
-      <span>© <script>document.write(new Date().getFullYear())</script> Your Name</span>
+      <span>© <script>document.write(new Date().getFullYear())</script> Gaurav Bhandari</span>
       <span>Made with care.</span>
     </footer>
 
