@@ -34,7 +34,6 @@
       min-height: 100vh;
     }
 
-    /* ── Nav ── */
     nav {
       position: sticky;
       top: 0;
@@ -57,11 +56,7 @@
       letter-spacing: 0.01em;
     }
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-    }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
 
     nav ul a {
       font-size: 0.8125rem;
@@ -81,14 +76,8 @@
       padding-bottom: 1px;
     }
 
-    /* ── Layout ── */
-    .wrapper {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
+    .wrapper { max-width: 720px; margin: 0 auto; padding: 0 2rem; }
 
-    /* ── Page header ── */
     .page-header {
       padding: 4rem 0 2.5rem;
       border-bottom: 1px solid var(--rule);
@@ -107,11 +96,7 @@
       letter-spacing: -0.01em;
     }
 
-    .page-header .subtitle {
-      font-size: 0.9375rem;
-      color: var(--muted);
-      margin-top: 0.4rem;
-    }
+    .page-header .subtitle { font-size: 0.9375rem; color: var(--muted); margin-top: 0.4rem; }
 
     .download-btn {
       display: inline-flex;
@@ -132,22 +117,11 @@
       flex-shrink: 0;
     }
 
-    .download-btn:hover {
-      border-color: var(--faint);
-      color: var(--text);
-    }
+    .download-btn:hover { border-color: var(--faint); color: var(--text); }
 
-    /* ── CV body layout ── */
-    .cv-body {
-      display: grid;
-      grid-template-columns: 180px 1fr;
-      gap: 0;
-    }
+    .cv-body { display: grid; grid-template-columns: 160px 1fr; gap: 0; }
 
-    /* ── Section ── */
-    .cv-section {
-      display: contents;
-    }
+    .cv-section { display: contents; }
 
     .cv-section-label {
       font-size: 0.75rem;
@@ -158,25 +132,16 @@
       padding: 2.75rem 2rem 2.75rem 0;
       border-bottom: 1px solid var(--rule);
       line-height: 1.4;
-      position: relative;
-      top: 0;
     }
 
-    .cv-section-content {
-      padding: 2.75rem 0;
-      border-bottom: 1px solid var(--rule);
-    }
+    .cv-section-content { padding: 2.75rem 0; border-bottom: 1px solid var(--rule); }
 
     .cv-section:last-child .cv-section-label,
-    .cv-section:last-child .cv-section-content {
-      border-bottom: none;
-    }
+    .cv-section:last-child .cv-section-content { border-bottom: none; }
 
-    /* ── Role entry ── */
-    .role-entry {
-      margin-bottom: 2rem;
-    }
+    .summary-text { font-size: 0.9375rem; color: var(--muted); line-height: 1.8; }
 
+    .role-entry { margin-bottom: 2.25rem; }
     .role-entry:last-child { margin-bottom: 0; }
 
     .role-header {
@@ -185,47 +150,32 @@
       justify-content: space-between;
       gap: 1rem;
       flex-wrap: wrap;
-      margin-bottom: 0.15rem;
+      margin-bottom: 0.1rem;
     }
 
-    .role-title {
-      font-size: 0.9375rem;
-      font-weight: 500;
-      color: var(--text);
-    }
+    .role-title { font-size: 0.9375rem; font-weight: 500; color: var(--text); }
 
-    .role-dates {
-      font-size: 0.8125rem;
-      color: var(--faint);
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
+    .role-dates { font-size: 0.8125rem; color: var(--faint); white-space: nowrap; flex-shrink: 0; }
 
-    .role-company {
-      font-size: 0.875rem;
-      color: var(--accent);
-      margin-bottom: 0.6rem;
-      font-weight: 400;
-    }
+    .role-company { font-size: 0.875rem; color: var(--accent); margin-bottom: 0.7rem; font-weight: 400; }
 
-    .role-desc {
-      font-size: 0.9375rem;
+    .role-bullets { list-style: none; padding: 0; margin: 0 0 0.75rem; }
+
+    .role-bullets li {
+      font-size: 0.9rem;
       color: var(--muted);
-      line-height: 1.7;
-      margin: 0;
+      line-height: 1.65;
+      padding-left: 1.1rem;
+      position: relative;
+      margin-bottom: 0.35rem;
     }
 
-    /* ── Tags row ── */
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.75rem;
-    }
+    .role-bullets li::before { content: '–'; position: absolute; left: 0; color: var(--faint); }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
 
     .tag {
       font-size: 0.75rem;
-      font-weight: 400;
       color: var(--muted);
       background: var(--surface);
       border: 1px solid var(--rule);
@@ -233,61 +183,23 @@
       padding: 0.2rem 0.6rem;
     }
 
-    /* ── Education ── */
-    .edu-entry {
-      margin-bottom: 1.5rem;
-    }
-
+    .edu-entry { margin-bottom: 1.25rem; }
     .edu-entry:last-child { margin-bottom: 0; }
+    .edu-degree { font-size: 0.9375rem; font-weight: 500; color: var(--text); }
+    .edu-year { font-size: 0.8125rem; color: var(--faint); margin-top: 0.1rem; }
 
-    .edu-degree {
-      font-size: 0.9375rem;
-      font-weight: 500;
-      color: var(--text);
-    }
-
-    .edu-school {
-      font-size: 0.875rem;
-      color: var(--accent);
-      margin: 0.1rem 0 0.2rem;
-    }
-
-    .edu-year {
-      font-size: 0.8125rem;
-      color: var(--faint);
-    }
-
-    /* ── Certifications ── */
-    .cert-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.75rem;
-    }
+    .cert-list { display: flex; flex-direction: column; gap: 0.5rem; }
 
     .cert-item {
-      background: var(--surface);
-      border-radius: 2px;
-      padding: 0.75rem 1rem;
-    }
-
-    .cert-name {
       font-size: 0.875rem;
-      font-weight: 500;
-      color: var(--text);
-      line-height: 1.35;
+      color: var(--muted);
+      padding-left: 1.1rem;
+      position: relative;
     }
 
-    .cert-body {
-      font-size: 0.8125rem;
-      color: var(--faint);
-      margin-top: 0.2rem;
-    }
+    .cert-item::before { content: '–'; position: absolute; left: 0; color: var(--faint); }
 
-    /* ── Skills in CV ── */
-    .skill-group {
-      margin-bottom: 1.25rem;
-    }
-
+    .skill-group { margin-bottom: 1.25rem; }
     .skill-group:last-child { margin-bottom: 0; }
 
     .skill-group-label {
@@ -299,11 +211,7 @@
       margin-bottom: 0.5rem;
     }
 
-    .skill-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-    }
+    .skill-pills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 
     .skill-pill {
       font-size: 0.8125rem;
@@ -314,7 +222,6 @@
       padding: 0.25rem 0.65rem;
     }
 
-    /* ── Footer ── */
     footer {
       padding: 2rem 0;
       display: flex;
@@ -324,16 +231,8 @@
       gap: 1rem;
     }
 
-    footer p {
-      font-size: 0.8125rem;
-      color: var(--faint);
-      margin: 0;
-    }
-
-    footer .footer-links {
-      display: flex;
-      gap: 1.25rem;
-    }
+    footer p { font-size: 0.8125rem; color: var(--faint); margin: 0; }
+    footer .footer-links { display: flex; gap: 1.25rem; }
 
     footer .footer-links a {
       font-size: 0.8125rem;
@@ -344,39 +243,22 @@
 
     footer .footer-links a:hover { color: var(--text); }
 
-    /* ── Fade in ── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(10px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
     .page-header { animation: fadeUp 0.4s ease both; }
-    .cv-section-label { animation: fadeUp 0.45s ease both; }
-    .cv-section-content { animation: fadeUp 0.45s ease both; }
+    .cv-section-label, .cv-section-content { animation: fadeUp 0.45s ease both; }
 
-    /* ── Mobile ── */
     @media (max-width: 600px) {
       nav { padding: 0 1.25rem; }
       nav ul { gap: 1.25rem; }
       .wrapper { padding: 0 1.25rem; }
-
-      .cv-body {
-        grid-template-columns: 1fr;
-      }
-
-      .cv-section-label {
-        padding: 1.75rem 0 0.25rem;
-        border-bottom: none;
-      }
-
-      .cv-section-content {
-        padding: 0.75rem 0 1.75rem;
-      }
-
-      .cert-grid { grid-template-columns: 1fr; }
-
+      .cv-body { grid-template-columns: 1fr; }
+      .cv-section-label { padding: 1.75rem 0 0.25rem; border-bottom: none; }
+      .cv-section-content { padding: 0.75rem 0 1.75rem; }
       .page-header { padding: 2.5rem 0 2rem; }
-
       footer { flex-direction: column; align-items: flex-start; }
     }
   </style>
@@ -397,14 +279,20 @@
     <div class="page-header">
       <div>
         <h1>Curriculum Vitae</h1>
-        <p class="subtitle">Enterprise Architecture Leader · London, UK</p>
+        <p class="subtitle">Product &amp; Enterprise Architect · London, UK</p>
       </div>
-      <a href="/cv/gaurav-bhandari-cv.pdf" class="download-btn" download>
-        Download PDF ↓
-      </a>
+      <a href="/cv/gaurav-bhandari-cv.pdf" class="download-btn" download>Download PDF ↓</a>
     </div>
 
     <div class="cv-body">
+
+      <!-- Summary -->
+      <div class="cv-section">
+        <div class="cv-section-label">Summary</div>
+        <div class="cv-section-content">
+          <p class="summary-text">Expert Product Architect helping shape service providers' end-to-end quote, order, and assurance journey. Extensive knowledge building cloud-native, catalogue-driven order management solutions ensuring usability, flexibility, and scalability. Strong track record in driving customer success, increasing revenue, and people development — with deep expertise in TMForum and MEF industry standards.</p>
+        </div>
+      </div>
 
       <!-- Experience -->
       <div class="cv-section">
@@ -413,48 +301,55 @@
 
           <div class="role-entry">
             <div class="role-header">
-              <span class="role-title">Enterprise Architect</span>
-              <span class="role-dates">2022 — Present</span>
+              <span class="role-title">Architect</span>
+              <span class="role-dates">Apr 2021 — Present</span>
             </div>
-            <p class="role-company">Eutelsat · London, UK</p>
-            <p class="role-desc">Aligning technology strategy with business goals across a complex, global satellite communications organisation. Responsible for defining architecture principles, governing solution decisions, and driving digital transformation initiatives across engineering and operations.</p>
+            <p class="role-company">OneWeb (now Eutelsat) · London, UK</p>
+            <ul class="role-bullets">
+              <li>Led digitisation of OSS/BSS workflow, migrating from legacy to cloud-native using Salesforce/Conga, ServiceNow, and an API-first approach.</li>
+              <li>Led digital transformation of contract and product framework and management.</li>
+              <li>Built integration patterns between Salesforce, Conga, Order Management, and Nokia FlowOne via MuleSoft, supporting the telco ESB pattern.</li>
+              <li>Digital Product Lead for Product Catalogue Modelling and Fulfilment via Order Management and Provisioning Platform.</li>
+              <li>Defined the product model for low-orbit satellite service providers — adopted by MEF as a standard.</li>
+              <li>Created KPIs for measuring product performance for revenue recognition and service assurance.</li>
+              <li>Architected communication of catalogue specifications across CRM, CPQ, OM, Provisioning, and Billing using TMF Open APIs.</li>
+              <li>Created integration patterns enabling customers to connect with OneWeb via TMF Open APIs (TMF 622, 640, 641).</li>
+            </ul>
             <div class="tags">
               <span class="tag">Enterprise Architecture</span>
-              <span class="tag">TOGAF</span>
-              <span class="tag">Digital Transformation</span>
-              <span class="tag">Technology Strategy</span>
+              <span class="tag">Salesforce</span>
+              <span class="tag">MuleSoft</span>
+              <span class="tag">TMF Open APIs</span>
+              <span class="tag">OSS/BSS</span>
+              <span class="tag">Cloud Native</span>
               <span class="tag">Satellite &amp; Telecoms</span>
             </div>
           </div>
 
           <div class="role-entry">
             <div class="role-header">
-              <span class="role-title">Product Architect</span>
-              <span class="role-dates">2016 — 2022</span>
+              <span class="role-title">Principal Consultant — E2E Architect</span>
+              <span class="role-dates">2010 — 2021</span>
             </div>
-            <p class="role-company">Hansen Technologies · UK</p>
-            <p class="role-desc">Shaped the evolution of software products serving utilities and energy markets globally. Worked closely with product management and engineering to translate customer needs into scalable, commercially viable architecture. Took solutions from concept through to delivery across multiple product lines.</p>
+            <p class="role-company">Sigma / Hansen Technologies · UK</p>
+            <ul class="role-bullets">
+              <li>Delivered more than 16 successful implementations, overseeing architecture and delivery with full customer satisfaction.</li>
+              <li>Acted as liaison between customer enterprise architects and the product team to deliver solutions maximising product capabilities.</li>
+              <li>SME for Hansen Catalogue, CPQ, OM, and Inventory Products, guiding customers through design and implementation.</li>
+              <li>Utilised TMForum's SID and Business Process Framework to build enterprise architecture frameworks for customers.</li>
+              <li>Created process models for Quote to Order, Order to Fulfilment, Fulfilment to Activation, and Provisioning.</li>
+              <li>Product Owner for fulfilment products — defined Epics, User Stories, backlogs, risk mitigation, and MVP scoping.</li>
+              <li>Built CI/CD pipelines using GitHub/GitLab; defined Disaster Recovery product strategy and customer architecture.</li>
+              <li>Led multidisciplinary, geographically distributed teams across AMS, EMEA, and APAC.</li>
+            </ul>
             <div class="tags">
               <span class="tag">Solution Architecture</span>
-              <span class="tag">Product Strategy</span>
+              <span class="tag">Hansen Suite</span>
+              <span class="tag">Product Ownership</span>
+              <span class="tag">TMForum SID / eTOM</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">Agile / Scrum</span>
               <span class="tag">Utilities &amp; Energy</span>
-              <span class="tag">API Design</span>
-              <span class="tag">Cloud Architecture</span>
-            </div>
-          </div>
-
-          <div class="role-entry">
-            <div class="role-header">
-              <span class="role-title">Senior Business Analyst</span>
-              <span class="role-dates">2010 — 2016</span>
-            </div>
-            <p class="role-company">Hansen Technologies · UK</p>
-            <p class="role-desc">Translated complex business requirements into functional specifications for enterprise billing and customer management systems. Worked alongside clients and engineering teams to bridge the gap between business need and technical delivery, developing deep domain expertise in regulated utility markets.</p>
-            <div class="tags">
-              <span class="tag">Business Analysis</span>
-              <span class="tag">Requirements Engineering</span>
-              <span class="tag">Agile / SAFe</span>
-              <span class="tag">Stakeholder Management</span>
             </div>
           </div>
 
@@ -465,19 +360,14 @@
       <div class="cv-section">
         <div class="cv-section-label">Education</div>
         <div class="cv-section-content">
-
           <div class="edu-entry">
-            <p class="edu-degree">MBA</p>
-            <p class="edu-school">Symbiosis International University</p>
+            <p class="edu-degree">MBA (Information Technology)</p>
             <p class="edu-year">2008 — 2010</p>
           </div>
-
           <div class="edu-entry">
-            <p class="edu-degree">BE (Bachelor of Engineering)</p>
-            <p class="edu-school">Rajasthan University</p>
+            <p class="edu-degree">Bachelor of Engineering</p>
             <p class="edu-year">2003 — 2007</p>
           </div>
-
         </div>
       </div>
 
@@ -485,19 +375,12 @@
       <div class="cv-section">
         <div class="cv-section-label">Certifications</div>
         <div class="cv-section-content">
-          <div class="cert-grid">
-            <div class="cert-item">
-              <p class="cert-name">TOGAF 10 Certified</p>
-              <p class="cert-body">The Open Group</p>
-            </div>
-           <div class="cert-item">
-              <p class="cert-name">SAFe Architect</p>
-              <p class="cert-body">Scaled Agile</p>
-            </div>
-            <div class="cert-item">
-              <p class="cert-name">AWS Cloud Practitioner</p>
-              <p class="cert-body">Amazon Web Services</p>
-            </div>
+          <div class="cert-list">
+            <p class="cert-item">Hansen Suite — Catalogue, CPQ, OM, Portfolio Inventory, Provisioning</p>
+            <p class="cert-item">TM Forum Information Framework (SID) — Foundation &amp; Knowledge</p>
+            <p class="cert-item">Business Process Framework (eTOM) — Knowledge &amp; Foundation</p>
+            <p class="cert-item">ITIL Foundation</p>
+            <p class="cert-item">Certified Scrum Master</p>
           </div>
         </div>
       </div>
@@ -513,46 +396,54 @@
               <span class="skill-pill">Enterprise Architecture</span>
               <span class="skill-pill">Solution Architecture</span>
               <span class="skill-pill">Product Architecture</span>
-              <span class="skill-pill">Technology Strategy</span>
-              <span class="skill-pill">Digital Transformation</span>
-              <span class="skill-pill">TOGAF</span>
-              <span class="skill-pill">ArchiMate</span>
+              <span class="skill-pill">Catalogue Modelling</span>
+              <span class="skill-pill">Order Fulfilment</span>
+              <span class="skill-pill">High Availability &amp; DR</span>
             </div>
           </div>
 
           <div class="skill-group">
-            <p class="skill-group-label">Delivery &amp; Methods</p>
+            <p class="skill-group-label">Integration &amp; APIs</p>
             <div class="skill-pills">
-              <span class="skill-pill">Business Analysis</span>
-              <span class="skill-pill">Agile</span>
-              <span class="skill-pill">SAFe</span>
-              <span class="skill-pill">Stakeholder Engagement</span>
-              <span class="skill-pill">Requirements Engineering</span>
+              <span class="skill-pill">TMF Open APIs</span>
+              <span class="skill-pill">MEF Standards</span>
+              <span class="skill-pill">MuleSoft</span>
+              <span class="skill-pill">ESB Patterns</span>
+              <span class="skill-pill">OAuth 2.0</span>
+              <span class="skill-pill">OKTA / Azure AD / OpenID</span>
             </div>
           </div>
 
           <div class="skill-group">
-            <p class="skill-group-label">Technology</p>
+            <p class="skill-group-label">Platforms &amp; Tools</p>
             <div class="skill-pills">
-              <span class="skill-pill">Cloud Architecture</span>
-              <span class="skill-pill">API &amp; Integration Design</span>
+              <span class="skill-pill">Salesforce (CPQ, LWC, Service Cloud)</span>
+              <span class="skill-pill">ServiceNow</span>
               <span class="skill-pill">AWS</span>
-              <span class="skill-pill">Microservices</span>
+              <span class="skill-pill">Azure</span>
+              <span class="skill-pill">Kubernetes</span>
+              <span class="skill-pill">Docker</span>
+              <span class="skill-pill">Jenkins</span>
+              <span class="skill-pill">GitHub Actions</span>
+              <span class="skill-pill">Ansible</span>
             </div>
           </div>
 
           <div class="skill-group">
-            <p class="skill-group-label">Domains</p>
+            <p class="skill-group-label">Delivery</p>
             <div class="skill-pills">
-              <span class="skill-pill">Utilities &amp; Energy</span>
-              <span class="skill-pill">Satellite &amp; Telecoms</span>
+              <span class="skill-pill">Agile / Scrum / Kanban</span>
+              <span class="skill-pill">Business Analysis</span>
+              <span class="skill-pill">Team Management</span>
+              <span class="skill-pill">Release Management</span>
+              <span class="skill-pill">BPMN / BPEL</span>
             </div>
           </div>
 
         </div>
       </div>
 
-    </div><!-- /cv-body -->
+    </div>
 
     <footer>
       <p>© 2025 Gaurav Bhandari · Made with care</p>
