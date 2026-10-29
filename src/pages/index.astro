@@ -1,0 +1,72 @@
+---
+import '../styles.css';
+const skills = [
+  {number:'01', title:'Business & Enterprise Architecture', detail:'Business capabilities, value streams, process and information architecture informed by TOGAF®, TM Forum eTOM and SID.', tags:['TOGAF®','eTOM / SID','Capability mapping']},
+  {number:'02', title:'Telecom OSS/BSS Transformation', detail:'Customer-to-order and order-to-activation journeys across catalogue, CPQ, order management, provisioning and billing.', tags:['OSS / BSS','Product catalogue','Fulfilment']},
+  {number:'03', title:'Integration & API Strategy', detail:'API-first integration approaches, reusable patterns and canonical information models connecting enterprise platforms.', tags:['TM Forum Open APIs','MuleSoft','Event-driven integration']},
+  {number:'04', title:'Technology Leadership', detail:'Cross-functional alignment, vendor evaluation, product roadmaps and architecture guidance for senior stakeholders and delivery teams.', tags:['Strategy','Stakeholders','Team mentoring']},
+];
+const highlights = [
+  {eyebrow:'CURRENT FOCUS', title:'Catalogue & fulfilment architecture', text:'Leading product catalogue modelling and fulfilment architecture for satellite connectivity services, spanning CRM, CPQ, order management, provisioning and billing.'},
+  {eyebrow:'ARCHITECTURE APPROACH', title:'Reusable product and integration models', text:'Defining product-service-resource models, TM Forum API patterns and canonical data models to support consistent customer and order journeys.'},
+  {eyebrow:'DELIVERY EXPERIENCE', title:'Enterprise implementations at scale', text:'Architectural and delivery oversight across 16+ customer implementations during an 11-year career at Sigma Systems / Hansen.'}
+];
+const experience = [
+  {years:'2021 — PRESENT', role:'Enterprise Architect', employer:'Eutelsat OneWeb', detail:'Previously Solutions Architect. Architecture ownership for catalogue and fulfilment; API-first integration strategy; customer and order journeys; senior stakeholder engagement.'},
+  {years:'2020 — 2021', role:'Principal Consultant · End-to-End Architect', employer:'Sigma Systems / Hansen', detail:'Enterprise architecture frameworks using eTOM and SID, target-process workshops, product ownership, solution architecture and team leadership.'},
+  {years:'2018 — 2020', role:'Product Architect', employer:'Sigma Systems / Hansen', detail:'Product architecture within an OSS/BSS software organisation.'},
+  {years:'2015 — 2018', role:'Senior Consultant', employer:'Sigma Systems / Hansen', detail:'Consulting and delivery across telecom platforms and implementations.'},
+  {years:'2010 — 2015', role:'Senior Business Analyst', employer:'Sigma Systems / Hansen', detail:'Business analysis and customer requirements as the foundation for subsequent architecture roles.'}
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101c2b" />
+  <meta name="description" content="Gaurav Bhandari — TOGAF-certified Enterprise Architect connecting business strategy and technology architecture across telecom OSS/BSS, integration and transformation." />
+  <meta property="og:title" content="Gaurav Bhandari | Enterprise Architect" />
+  <meta property="og:description" content="Connecting business strategy with technology architecture." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gauravb.co.uk" />
+  <link rel="canonical" href="https://gauravb.co.uk/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <title>Gaurav Bhandari | Enterprise Architect & Technology Strategist</title>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-layout">
+      <a class="brand" href="#top" aria-label="Gaurav Bhandari, back to top"><span class="brand-mark">GB<span>.</span></span><span class="brand-name">GAURAV BHANDARI</span></a>
+      <nav aria-label="Main navigation" class="nav-links">
+        <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#work">Approach</a>
+      </nav>
+      <a class="nav-contact" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-topline"><span class="availability-dot"></span> ENTERPRISE ARCHITECT <span class="hero-separator">/</span> TECHNOLOGY STRATEGY</div>
+        <h1>Connecting <em>business strategy</em> with technology architecture<span class="accent-period">.</span></h1>
+        <p class="hero-description">I’m Gaurav Bhandari — a TOGAF®-certified Enterprise Architect helping organisations turn complex business challenges into clear, scalable technology solutions.</p>
+        <div class="hero-actions"><a href="#experience" class="button button-primary">Explore my experience <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/gauravbhandari85/" target="_blank" rel="noopener noreferrer" class="button button-outline">Connect on LinkedIn <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-stats" aria-label="Career highlights"><div><strong>15<span>+</span></strong><span>Years in telecom technology</span></div><div><strong>16<span>+</span></strong><span>Customer implementations</span></div><div><strong>TOGAF<span>®</span></strong><span>Practitioner certified · 2026</span></div></div>
+      </div>
+      <a href="#about" class="scroll-hint">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
+    </section>
+    <section id="about" class="section about-section"><div class="container section-grid">
+      <div><p class="eyebrow">01 / INTRODUCTION</p><h2>Architecture starts with <em>understanding the business.</em></h2></div>
+      <div class="body-column"><p class="lead">My career began in business analysis — understanding how organisations operate, where processes break down, and what customers really need.</p><p>That foundation has shaped more than 15 years of work across consulting, product architecture and enterprise architecture. Today, I connect business priorities with practical technology decisions, designing coherent journeys across complex telecom and satellite connectivity platforms.</p><p>I work across business stakeholders, product teams and technology specialists to create architectures that are understandable, reusable and aligned to outcomes.</p><div class="credential"><span class="credential-icon">✳</span><div><strong>TOGAF® Enterprise Architecture Practitioner</strong><small>The Open Group · 2026</small></div></div></div>
+    </div></section>
+    <section id="expertise" class="section expertise-section"><div class="container"><div class="section-heading"><div><p class="eyebrow">02 / EXPERTISE</p><h2>Where strategy meets <em>execution.</em></h2></div><p>A blend of business architecture, telecom domain knowledge and hands-on integration experience.</p></div><div class="expertise-grid">{skills.map(item => <article class="expertise-card"><span class="card-number">{item.number} /</span><h3>{item.title}</h3><p>{item.detail}</p><div class="tags">{item.tags.map(t=><span>{t}</span>)}</div></article>)}</div></div></section>
+    <section id="experience" class="section experience-section"><div class="container section-grid"><div><p class="eyebrow">03 / EXPERIENCE</p><h2>From business analyst to <em>enterprise architect.</em></h2><p class="section-aside">A career built on connecting customer needs, product capabilities and technology direction.</p></div><div class="timeline">{experience.map(item => <article class="timeline-item"><div class="timeline-dot"></div><span class="timeline-date">{item.years}</span><h3>{item.role}</h3><strong>{item.employer}</strong><p>{item.detail}</p></article>)}</div></div></section>
+    <section id="work" class="section work-section"><div class="container"><div class="section-heading"><div><p class="eyebrow">04 / ARCHITECTURE IN PRACTICE</p><h2>Clarity in <em>complexity.</em></h2></div><p>Selected themes from my professional work, described at a high level.</p></div><div class="work-grid">{highlights.map((item,index) => <article class="work-card"><div class="work-card-top"><span>{item.eyebrow}</span><span>0{index+1}</span></div><div class="diagram" aria-hidden="true"><div class="diagram-line"></div><span class="diagram-node">{index===0?'CRM':index===1?'MODEL':'DISCOVER'}</span><span class="diagram-arrow">→</span><span class="diagram-node primary-node">{index===0?'ORDER':index===1?'APIs':'DESIGN'}</span><span class="diagram-arrow">→</span><span class="diagram-node">{index===0?'ACTIVATE':index===1?'SCALE':'DELIVER'}</span></div><h3>{item.title}</h3><p>{item.text}</p></article>)}</div><p class="work-note">These are high-level professional experience summaries, not client case studies or claims of quantified outcomes.</p></div></section>
+    <section class="section philosophy-section"><div class="container philosophy-content"><p class="eyebrow">MY APPROACH</p><blockquote>“Technology architecture should make business decisions <em>clearer</em> — not more complicated.”</blockquote><span>— GAURAV BHANDARI · PROFESSIONAL PHILOSOPHY</span></div></section>
+    <section id="contact" class="section contact-section"><div class="container contact-layout"><div><p class="eyebrow">05 / CONNECT</p><h2>Let’s discuss what’s <em>next.</em></h2><p>I’m interested in conversations around enterprise architecture leadership, business architecture, telecom transformation and technology strategy.</p><div class="contact-links"><a href="https://www.linkedin.com/in/gauravbhandari85/" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a><a href="https://github.com/GauravBhandari19" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a></div></div><div class="contact-aside"><span class="contact-aside-mark">GB.</span><p>Based in Farnborough, United Kingdom.<br/>Connecting the business and technology worlds.</p></div></div></section>
+  </main>
+  <footer><div class="container footer-layout"><span>© {new Date().getFullYear()} Gaurav Bhandari</span><span>Designed with purpose · Hosted on GitHub Pages</span><a href="#top">Back to top ↑</a></div></footer>
+</body>
+</html>
